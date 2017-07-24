@@ -1,0 +1,152 @@
+@font-face {
+	font-family:'Hyperspace';
+	src:url('../fonts/Hyperspace.ttf');
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'Basileia';
+	src:url('../fonts/Basileia.ttf');
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'Stencil Army WW I';
+	src:url('../fonts/Stencil Army WW I.ttf');
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'MarvelScript';
+	src:url('../fonts/MarvelScript.ttf');
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'Helvetica';
+	src:url('../fonts/Helvetica Cyrillic Upright.ttf');
+	font-weight:400;
+	font-style:normal
+}
+
+body,html {
+	height:100%
+}
+body{
+	padding-top: 50px;
+	position: relative;
+}
+.container {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:15px;
+	padding-right:15px
+}
+/*渐变色*/
+.page.section-1 {
+	background-image:linear-gradient(to bottom,#71BA51 0,#00B16A 100%);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF71BA51',endColorstr='#FF00B16A',GradientType=0);
+	color:#fff;
+	box-sizing:border-box;
+	min-height:100%
+}
+
+.section-1-fonts.title {
+	font-size:9.0rem;
+	font-family:'Hyperspace';
+	font-weight:700
+}
+
+.section-1-fonts.title--description {
+	font-size: 4.0rem;
+	font-family:'Basileia';
+	font-weight: 400;
+}
+
+.page.section-2 {
+	color:#000;
+	box-sizing:border-box;
+	min-height:100%
+}
+.section-2-box {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 110px;
+	height: 100%;
+}
+.section-2-left {
+	width: 50%;
+	height: 100%;
+	padding: 20px;
+	float: left;
+}
+.section-2-right {
+	width: 40%;
+	height: 100%;
+	padding: 20px;
+	float: right;
+}
+.section-2-right-title {
+	font-size:4.5rem;
+	font-family:'Stencil Army WW I';
+	font-weight:400
+}
+
+.section-2-right-desc {
+	font-size: 2.4rem;
+	font-family:'MarvelScript';
+	font-weight: 50;
+}
+
+
+.page.section-3 {
+	background-image:linear-gradient(to bottom,#4ECDC4 0,#19B5FE 100%);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4ECDC4',endColorstr='#FF19B5FE',GradientType=0);
+	color:#fff
+	box-sizing:border-box;
+	min-height:100%
+}
+
+.page.section-4 {
+	color:#000;
+	box-sizing:border-box;
+	min-height:100%
+}
+.section-4-row {
+	background-color: #F3F9FF;
+}
+.section-4-col {
+	padding: 20px;
+	height: 190px;
+}
+.section-4-desc {
+	font-size: 1.9rem;
+	font-family:'Helvetica';
+	font-weight: 50;
+}
+.footer {
+	padding:2.6rem;
+	background:#E7E7E7;
+	color:#34495e
+}
+.footer-left-title {
+	font-size:4.0rem;
+	font-family:'Hyperspace';
+	font-weight:800
+}
+.footer-right-add {
+	padding-top: 20px;
+}
+
+.seciton-empty {
+	width: 100%;
+	height: 200px
+}
+
+
