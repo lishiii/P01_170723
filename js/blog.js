@@ -1,0 +1,1 @@
+$(".item img").addClass("carousel-inner img-responsive img-rounded");

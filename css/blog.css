@@ -3,16 +3,21 @@
 	margin-bottom: 10px;
 }
 
-.carousel-caption {
+
+.item img {
+	width: 100%;
+	height: auto;
+}
+/* .carousel-caption {
 	font-size: 3.6rem;
 	font-family:'Basileia';
 	font-weight: 400;
-}
+} */
 
 .carousel-pic {
 
 	width: auto;
-	height: 100%;
+	height: 360px;
 }
 
 #assist {
@@ -26,17 +31,30 @@
 }
 
 #blog-left {
-	width: 70%;
+	width: 80%;
 	height: auto;
 	
 }
 
 #blog-right {
-	width: 27%;
+	width: 18%;
 	height: 1200px;
-	background-color: blue;
 }
 
+.text-main:hover { 
+	text-decoration:none;
+}
+
+.panel-body.catalog-body {
+	padding-top: 6px;
+	padding-bottom: 3px;
+}
+.catalog-body a {
+	text-decoration:none;
+	font-size: 1.3rem;
+	font-family:'Basileia';
+	font-weight: 550;
+}
 
 .footer{
 	
