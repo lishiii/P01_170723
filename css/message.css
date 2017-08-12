@@ -13,5 +13,24 @@
 	margin-bottom: 15px;
 }
 
-span.emotion { width: 42px; height: 20px; padding-left: 20px; cursor: pointer }
-span.emotion:hover { background-position: 2px -28px }
+p.emotion { 
+	width: 42px; height: 20px; padding-left: 20px; cursor: pointer 
+}
+p.emotion:hover { 
+	background-position: 2px -28px 
+}
+
+#content {
+	resize: none;
+}
+
+.hr1 {
+	size: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.media-object {
+	width: 90px;
+	height: 90px;
+}

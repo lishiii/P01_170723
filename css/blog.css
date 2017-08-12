@@ -76,3 +76,10 @@
 .footer{
 	
 }
+
+.img-rounded {
+	width: 140px;
+	height: 140px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}

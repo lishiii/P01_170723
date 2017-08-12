@@ -1,0 +1,20 @@
+.articleHr {
+	height:10px;
+	width:100%;
+	background:#EEEEEE;
+	overflow:hidden;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.art-title {
+	margin-left: 30px;
+}
+.art-time {
+	margin-right: 20px;
+}
+.art-content {
+	text-indent:30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	letter-spacing:0.5px
+}

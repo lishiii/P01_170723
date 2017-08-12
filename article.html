@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8"> 
-	<title>留言板</title>
+	<title>文章</title>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/my.css">
 	<link rel="stylesheet" type="text/css" href="css/blog.css">
 	<link rel="stylesheet" type="text/css" href="css/message.css">
+	<link rel="stylesheet" type="text/css" href="css/article.css">
 	<link rel="stylesheet" type="text/css" href="css/manhuaHtmlArea.1.0.css"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
@@ -46,7 +47,7 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li class=""><a href="./blog.html">博客</a></li>
 					<li class=""><a href="./textset.html">文本文章</a></li>
-					<li class="active"><a href="./message.html">留言板</a></li>
+					<li class=""><a href="./message.html">留言板</a></li>
 				</ul>
 			</div>
 		</div>
@@ -57,10 +58,30 @@
 
 		<div id="main-context">
 			<div id="blog-left" class="pull-left">
-				<div class="jumbotron">
-					<h2 class="text-center msg-title1">留言板</h2>
-					<p class="text-right msg-title2">———留下你的足迹，记录美丽时刻！</p>
+				
+				<div>
+					<h3 class="art-title"> 关于springmvc常用的注解标签详解</h3>
+					<div class="text-right art-time">
+						<span>2017-07-16 19:51&nbsp;&nbsp;&nbsp;40人阅读&nbsp;&nbsp;&nbsp;评论(4)</span>
+					</div>
+					<hr>
+					<p class="art-content">在SpringMVC 中，控制器Controller 负责处理由DispatcherServlet 分发的请求，它把用户请求的数据经过业务处理层处理之后封装成一个Model ，然后再把该Model 返回给对应的View 进行展示。在SpringMVC 中提供了一个非常简便的定义Controller 的方法，你无需继承特定的类或实现特定的接口，只需使用@Controller 标记一个类是Controller ，然后使用@RequestMapping 和@RequestParam 等一些注解用以定义URL 请求和Controller 方法之间的映射，这样的Controller 就能被外界访问到。此外Controller 不会直接依赖于HttpServletRequest 和HttpServletResponse 等HttpServlet 对象，它们可以通过Controller 的方法参数灵活的获取到。</p>
+					<p class="art-content">@Controller 用于标记在一个类上，使用它标记的类就是一个SpringMVC Controller 对象。分发处理器将会扫描使用了该注解的类的方法，并检测该方法是否使用了@RequestMapping 注解。@Controller 只是定义了一个控制器类，而使用@RequestMapping 注解的方法才是真正处理请求的处理器。单单使用@Controller 标记在一个类上还不能真正意义上的说它就是SpringMVC 的一个控制器类，因为这个时候spring 还不认识它。那么要如何做Spring 才能认识它呢？这个时候就需要我们把这个控制器类交给Spring 来管理。</p>
+					<p class="art-content">RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+					<p class="art-content">@Resource和@Autowired都是做bean的注入时使用，其实@Resource并不是Spring的注解，它的包是javax.annotation.Resource，需要导入，但是Spring支持该注解的注入。</p>
+					<p class="art-content">@Resource默认按照ByName自动注入，由J2EE提供，需要导入包javax.annotation.Resource。@Resource有两个重要的属性：name和type，而Spring将@Resource注解的name属性解析为bean的名字，而type属性则解析为bean的类型。所以，如果使用name属性，则使用byName的自动注入策略，而使用type属性时则使用byType自动注入策略。如果既不制定name也不制定type属性，这时将通过反射机制使用byName自动注入策略。</p>
+					<p class="art-content">①如果同时指定了name和type，则从Spring上下文中找到唯一匹配的bean进行装配，找不到则抛出异常。</p>
+					<p class="art-content">代表的是：该Controller的所有方法在调用前，先执行此@ModelAttribute方法，可用于注解和方法参数中，可以把这个@ModelAttribute特性，应用在BaseController当中，所有的Controller继承BaseController，即可实现在调用Controller时，先执行@ModelAttribute方法。</p>
+					<p class="art-content">@requestParam主要用于在SpringMVC后台控制层获取参数，类似一种是request.getParameter(“name”)，它有三个常用参数：defaultValue = “0”, required = false, value = “isApp”；defaultValue 表示设置默认值，required 铜过boolean设置是否是必须要传入的参数，value 值表示接受的传入的参数类型。</p>
+					<p class="art-content">相当于通用的注解，当不知道一些类归到哪个层时使用，但是不建议。</p>
+
+
+
 				</div>
+
+
+				<div class="articleHr"></div>
+
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						留言留言.
@@ -93,32 +114,21 @@
 							<div class="col-lg-4">
 								<ul class="list-group">
 									<li class="list-group-item">
-										<span class="badge list-group-item-success">103</span>
+										<span class="badge list-group-item-success">4</span>
 										这里已经有很多评论啦！
 									</li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="media">
-							<div class="media-left">
-								<img class="media-object" src="./images/36.jpg" alt="...">
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-								<p>5楼&nbsp;&nbsp;2017-08-08&nbsp;&nbsp;23:15发表</p>
-								<hr>
-							</div>
-						</div>
 
 						<div class="media">
 							<div class="media-left">
 								<img class="media-object" src="./images/36.jpg" alt="...">
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								<h4 class="media-heading">小明</h4>
+								<p>有来过，666666。</p>
 								<p>4楼&nbsp;&nbsp;2017-08-08&nbsp;&nbsp;23:15发表</p>
 								<hr>
 							</div>
@@ -129,8 +139,8 @@
 								<img class="media-object" src="./images/36.jpg" alt="...">
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								<h4 class="media-heading">linda</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Crvestibulum in vulputate at, tempus viverra turpis.</p>
 								<p>3楼&nbsp;&nbsp;2017-08-08&nbsp;&nbsp;23:15发表</p>
 								<hr>
 							</div>
@@ -141,8 +151,8 @@
 								<img class="media-object" src="./images/36.jpg" alt="...">
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+								<h4 class="media-heading">213213hkhkh</h4>
+								<p>Clla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 								<p>2楼&nbsp;&nbsp;2017-08-08&nbsp;&nbsp;23:15发表</p>
 								<hr>
 							</div>
@@ -160,25 +170,7 @@
 							</div>
 						</div>
 						<div class="text-center">
-						<nav aria-label="Page navigation" id="mypage">
-							<ul class="pagination">
-								<li id="previous" class="disabled">
-									<a href="#" aria-label="Previous">
-										<span aria-hidden="true">&laquo;</span>
-									</a>
-								</li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li id="next">
-									<a href="#" aria-label="Next">
-										<span aria-hidden="true">&raquo;</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
+							<button class="btn btn-default btn-block">查看更多</button>
 						</div>
 					</div>
 				</div>
