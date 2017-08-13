@@ -35,13 +35,13 @@
 }
 
 #blog-left {
-	width: 80%;
+	/*width: 80%;*/
 	height: auto;
 	
 }
 
 #blog-right {
-	width: 18%;
+	/*width: 18%;*/
 	height: 1200px;
 }
 
@@ -82,4 +82,27 @@
 	height: 140px;
 	margin-top: 20px;
 	margin-bottom: 0px;
+}
+
+/*body {
+	margin-top: 30px;
+}*/
+
+.carousel {
+        height: 350px;
+        background-color: #000;
+}
+
+.carousel .item {
+    height: 350px;
+    background-color: #000;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel-caption {
+    margin-bottom: 20px;
+    line-height: 1.8;
 }

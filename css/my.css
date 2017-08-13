@@ -80,13 +80,13 @@ body{
 	height: 100%;
 }
 .section-2-left {
-	width: 50%;
+	/*width: 50%;*/
 	height: 100%;
 	padding: 20px;
 	float: left;
 }
 .section-2-right {
-	width: 40%;
+	/*width: 40%;*/
 	height: 100%;
 	padding: 20px;
 	float: right;
@@ -149,4 +149,20 @@ body{
 	height: 200px
 }
 
+#logoFont {
+	/*margin-top: 20px;*/
+	font-size: 1.8rem;
+	font-family:'Basileia';
+	font-weight: 20px;
+	color: #000;
+}
+
+#logo {
+	padding-top: 0px;
+	margin-right: 10px;
+}
+
+/*#header {
+	height: 40px;
+}*/
 
