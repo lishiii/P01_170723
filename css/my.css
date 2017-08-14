@@ -47,7 +47,7 @@ body{
 	padding-right:15px
 }
 /*渐变色*/
-.page.section-1 {
+.page.section-3 {
 	background-image:linear-gradient(to bottom,#71BA51 0,#00B16A 100%);
 	background-repeat:repeat-x;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF71BA51',endColorstr='#FF00B16A',GradientType=0);
@@ -64,6 +64,14 @@ body{
 
 .section-1-fonts.title--description {
 	font-size: 4.0rem;
+	font-family:'Basileia';
+	font-weight: 400;
+}
+
+.section-1-btn {
+	/*background-color: #4ECDC4;*/
+	color: #000;
+	font-size: 3.0rem;
 	font-family:'Basileia';
 	font-weight: 400;
 }
@@ -104,7 +112,7 @@ body{
 }
 
 
-.page.section-3 {
+.page.section-1 {
 	background-image:linear-gradient(to bottom,#4ECDC4 0,#19B5FE 100%);
 	background-repeat:repeat-x;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4ECDC4',endColorstr='#FF19B5FE',GradientType=0);
@@ -165,4 +173,15 @@ body{
 /*#header {
 	height: 40px;
 }*/
+.btn-like {
+	width: 100px;
+	margin-bottom: 5px;
+	/*margin-left: 10%;
+	margin-right: 35%;
+	*/
+}
 
+.btn-unlike {
+	width: 100px;
+	/*margin-right: 10%;*/
+}
